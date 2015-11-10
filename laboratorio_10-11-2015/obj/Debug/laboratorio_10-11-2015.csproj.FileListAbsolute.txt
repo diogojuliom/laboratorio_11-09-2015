@@ -1,0 +1,5 @@
+C:\Users\wemerson\Documents\Visual Studio 2008\Projects\laboratorio_10-11-2015\laboratorio_10-11-2015\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\wemerson\Documents\Visual Studio 2008\Projects\laboratorio_10-11-2015\laboratorio_10-11-2015\bin\Debug\laboratorio_10-11-2015.exe
+C:\Users\wemerson\Documents\Visual Studio 2008\Projects\laboratorio_10-11-2015\laboratorio_10-11-2015\bin\Debug\laboratorio_10-11-2015.pdb
+C:\Users\wemerson\Documents\Visual Studio 2008\Projects\laboratorio_10-11-2015\laboratorio_10-11-2015\obj\Debug\laboratorio_10-11-2015.exe
+C:\Users\wemerson\Documents\Visual Studio 2008\Projects\laboratorio_10-11-2015\laboratorio_10-11-2015\obj\Debug\laboratorio_10-11-2015.pdb
