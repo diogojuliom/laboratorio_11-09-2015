@@ -27,6 +27,7 @@ namespace laboratorio_10_11_2015
         }
         public int procura_maior(int[] v) {
             int maior = 0;
+            
             try
             {
                 for (int i = 0; i < v.Length; i++)
@@ -45,6 +46,7 @@ namespace laboratorio_10_11_2015
         }
         public int primeira_posicao(int[] v, int num) {
             int posicao = 0;
+            bool teste = false;
             try
             {
                 for (int i = 0; i < v.Length; i++)
@@ -53,7 +55,12 @@ namespace laboratorio_10_11_2015
                     {
                         posicao = i;
                         i = v.Length;
+                        teste = true;
                     }
+                }
+                if (teste == false)
+                {
+                    throw new Exception();
                 }
             }
             catch (IndexOutOfRangeException erro)

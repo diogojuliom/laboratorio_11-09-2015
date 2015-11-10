@@ -23,31 +23,36 @@ namespace laboratorio_10_11_2015
                     Console.Write(vetor[i] + " ");
                 }
             }
-            catch (IndexOutOfRangeException erro) {
+            catch (IndexOutOfRangeException erro)
+            {
                 Console.WriteLine(erro.Message);
             }
 
 
             //Thread 1
-                //Menor valor
-                Console.WriteLine("\n\nMenor valor: " + v.procura_menor(vetor));
-                //Maior valor
-                Console.WriteLine("Maior valor: " + v.procura_maior(vetor));
+            //Menor valor
+            Console.WriteLine("\n\nMenor valor: " + v.procura_menor(vetor));
 
-                try
-                {
-                    Console.Write("\nDigite um número presente no vetor: ");
-                    numero = int.Parse(Console.ReadLine());
-                }
-                catch (FormatException erro) {
-                    Console.WriteLine(erro.Message);
-                }
+            //Maior valor
+            Console.WriteLine("Maior valor: " + v.procura_maior(vetor));
+
+            try
+            {
+                Console.Write("\nDigite um número presente no vetor: ");
+                numero = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException erro)
+            {
+                Console.WriteLine(erro.Message);
+            }
 
             //Thread 2
-                //Priemira posição do numero
-                Console.WriteLine("\nO número " + numero + " apareceu primeiro na posição: " + v.primeira_posicao(vetor,numero));
+            //Priemira posição do numero
+            try
+            {
+                Console.WriteLine("\nO número " + numero + " apareceu primeiro na posição: " + v.primeira_posicao(vetor, numero));
 
-            //Thread 3
+                //Thread 3
                 //Todas as posições do número
                 Console.WriteLine("\nTodas as posições do número " + numero);
                 try
@@ -64,13 +69,21 @@ namespace laboratorio_10_11_2015
                         }
                     }
                 }
-                catch (IndexOutOfRangeException erro) {
+                catch (IndexOutOfRangeException erro)
+                {
                     Console.WriteLine(erro.Message);
                 }
 
-            //Thread 4
+                //Thread 4
                 //Quantidade de vezes que o numero apareceu
                 Console.WriteLine("\n\nO número " + numero + " apareceu " + v.total(vetor, numero) + " vezes");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Número não encontrado!");
+            }
+
+
 
             Console.ReadKey();
         }
