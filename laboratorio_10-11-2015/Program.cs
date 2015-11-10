@@ -30,8 +30,11 @@ namespace laboratorio_10_11_2015
 
 
             //Thread 1
+            Thread t1 = new Thread(v.procura_menor(vetor));
+            t1.Start();
+
             //Menor valor
-            Console.WriteLine("\n\nMenor valor: " + v.procura_menor(vetor));
+            Console.WriteLine("\n\nMenor valor: " + thread01.Start());
 
             //Maior valor
             Console.WriteLine("Maior valor: " + v.procura_maior(vetor));

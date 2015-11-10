@@ -5,7 +5,7 @@ using System.Text;
 
 namespace laboratorio_10_11_2015
 {
-    class classVetor
+    public class classVetor
     {
         public int procura_menor(int[] v) {
             int menor = 11;
